@@ -6,7 +6,7 @@ $(document).ready(function(){
         localStorage.setItem(time, text);
     });
 
-   //var currentHour = moment().hours();
+   var currentHour = moment().hours();
 
    $("textarea").each(function(){
 
