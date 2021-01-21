@@ -1,19 +1,10 @@
+/* jumbotron, body, & row is a pre set class with this assignment */
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
-
-.textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
-/* jumbotron & row is a pre set class with this assignment */
 
 .jumbotron {
   text-align: center;
@@ -29,8 +20,19 @@ body {
   border-top: 1px solid white;;
 }
 
+/* These classes are for the time blocks */
+
 .description{
   white-space: pre-wrap;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
 }
 
 .time-block{
