@@ -5,5 +5,4 @@ This repo was created to show case my ability to use jQuery in a dynamic way. Th
 Check out the screenshot below for nice viual!
 
 ## Screenshot
-```
 ![Scheduler](./Develop/screenshot.png)
