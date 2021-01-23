@@ -1,157 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body class="body">
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Workday</title>
 
-    <div class="container">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Develop/style.css" />
 
-      <!-- 9:00 AM -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          9:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="9" data-military="9"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
+</head>
+
+<body class="body">
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+
+  <div class="container">
+
+    <!-- 9:00 AM -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        9:00
       </div>
 
-      <!-- 10:00 AM / 10:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          10:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="10" data-military="10"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
+      <textarea class="col-8 descripition" id="9" data-military="9"></textarea>
 
-      <!-- 11:00 AM / 11:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          11:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="11" data-military="11"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
-
-      <!-- 12:00 PM / 12:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          12:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="12" data-military="12"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
-
-      <!-- 1:00 PM / 13:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          13:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="13" data-military="13"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
-
-      <!-- 2:00 PM / 14:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          14:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="14" data-military="14"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
-
-      <!-- 3:00 PM / 15:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          15:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="15" data-military="15"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
-
-      <!-- 4:00 PM / 16:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          16:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="16" data-military="16"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
-
-      <!-- 5:00 PM / 17:00 -->
-      <div class="row time-block">
-        <div class="col-2 hour">
-          17:00
-        </div>
-        
-        <textarea class="col-8 descripition" id="17" data-military="17"></textarea>
-        
-        <button class="col-2 saveBtn">
-          Save
-        </button>
-      </div>
-
+      <button class="col-2 saveBtn">
+        Save
+      </button>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
+    <!-- 10:00 AM / 10:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        10:00
+      </div>
+
+      <textarea class="col-8 descripition" id="10" data-military="10"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+    <!-- 11:00 AM / 11:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        11:00
+      </div>
+
+      <textarea class="col-8 descripition" id="11" data-military="11"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+    <!-- 12:00 PM / 12:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        12:00
+      </div>
+
+      <textarea class="col-8 descripition" id="12" data-military="12"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+    <!-- 1:00 PM / 13:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        13:00
+      </div>
+
+      <textarea class="col-8 descripition" id="13" data-military="13"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+    <!-- 2:00 PM / 14:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        14:00
+      </div>
+
+      <textarea class="col-8 descripition" id="14" data-military="14"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+    <!-- 3:00 PM / 15:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        15:00
+      </div>
+
+      <textarea class="col-8 descripition" id="15" data-military="15"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+    <!-- 4:00 PM / 16:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        16:00
+      </div>
+
+      <textarea class="col-8 descripition" id="16" data-military="16"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+    <!-- 5:00 PM / 17:00 -->
+    <div class="row time-block">
+      <div class="col-2 hour">
+        17:00
+      </div>
+
+      <textarea class="col-8 descripition" id="17" data-military="17"></textarea>
+
+      <button class="col-2 saveBtn">
+        Save
+      </button>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./Develop/script.js"></script>
+</body>
+
 </html>
